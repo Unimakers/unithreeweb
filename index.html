@@ -1,29 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>3D Model Viewer</title>
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
   </head>
   <body>
-    <div class="container">
-      <div class="sidebar">
-        <a href="#" class="tab">Accueil</a>
-        <a href="#" class="tab">Produits</a>
-        <a href="#" class="tab">Panier</a>
-      </div>
-      <div class="content">
-        <h1>3D Model Viewer</h1>
-        <div id="scene-container"></div>
-      </div>
-      <div class="uploader-container">
-        <label for="file-input" class="file-label">
-          Sélectionner une image
-        </label>
-        <input type="file" id="file-input" accept=".jpg, .jpeg, .png" />
-        <img id="uploaded-image" class="uploaded-image" alt="Uploaded Image" />
-      </div>
-    </div>
-    <script type="module" src="/main.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
