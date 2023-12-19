@@ -46,10 +46,10 @@ function Shirt(props) {
   useFrame((state, delta) => easing.dampC(materials.lambert1.color, snap.color, 0.25, delta))
   return (
     <mesh castShadow geometry={nodes.T_Shirt_male.geometry} material={materials.lambert1} material-roughness={1} {...props} dispose={null}>
-      <Decal position={[0, 0.04, 0.15]} rotation={[0, 0, 0]} scale={0.12} map={texture} map-anisotropy={16} />
+      <Decal position={[0, 0.04, 0.15]} rotation={[0, 0, 0]} scale={0.2} map={texture} map-anisotropy={16} />
     </mesh>
   )
 }
 
 useGLTF.preload('/shirt_baked_collapsed.glb')
-;['/logo1.png'].forEach(useTexture.preload)
+;['/logo4.png'].forEach(useTexture.preload)

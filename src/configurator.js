@@ -30,7 +30,7 @@ export function Configurator() {
               <div className="decals--container">
                 {snap.decals.map((decal) => (
                   <div key={decal} className={`decal`} onClick={() => (state.decal = decal)}>
-                    <img src={decal + '_thumb.png'} alt="brand" />
+                    <img src={decal + '.png'} alt="brand" />
                   </div>
                 ))}
               </div>
