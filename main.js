@@ -82,22 +82,3 @@ function animate() {
 
 // Appel initial de la fonction animate
 animate();
-
-// Ajoute la fonction d'upload d'image
-const fileInput = document.getElementById('file-input');
-const uploadedImage = document.getElementById('uploaded-image');
-
-fileInput.addEventListener('change', (event) => {
-  const file = event.target.files[0];
-
-  if (file) {
-    const reader = new FileReader();
-
-    reader.onload = (e) => {
-      // Utilise e.target.result pour accéder aux données de l'image
-      uploadedImage.src = e.target.result;
-    };
-
-    reader.readAsDataURL(file);
-  }
-});
